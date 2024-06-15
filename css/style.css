@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
 /* Box Model Hack */
 * {
      box-sizing: border-box;
@@ -21,182 +23,126 @@
 /* BASE STYLES
 /*******************************************/
 
-.major-mono-display-regular {
-     font-family: "Major Mono Display", monospace;
-     font-weight: 400;
-     font-style: normal;
-   }
 
 body {
-     padding: 2% 10% 10% 10%;
-     background-color: rgb(0, 117, 185);
-     font-family: "Major Mono Display", monospace;
-     color:rgb(211, 215, 0);
-     text-align: center;
+     box-sizing: border-box;
+     padding: 2%;
+     margin: 0;
+     border: none;
+     width: 100%;
+     font-family: "Koulen", sans-serif;
+     font-weight: 400;
+     font-style: normal;
      font-size: 4rem;
 }
 
-section {
-     padding-bottom: 2%;
+body.dark-mode {
+     background-color: rgb(0, 0, 0);
+     color:rgb(4, 180, 255);
 }
 
-h1 {
-     font-size: 1.5em;
-     height: 1cap;
-     text-align: center;
-     margin: none;
+body.light-mode {
+     background-color: rgb(254, 255, 255);
+     color:rgb(0, 0, 0);
 }
 
-h2 {
-     font-size: 4rem;
-     height: 1cap;
-}
-
-h3 {
-     font-size: 3rem;
-     padding-left: 10%;
-     padding-right: 10%;
-     padding-bottom: 0;
-     height: .6cap;
-}
-
-h4 {
-     font-size: 1.5em;
-     height: 1cap;
-     padding: 0;
-     text-align: center;
-}
-
-section h2 {
-     padding-bottom: 2cap;
+#mode-icon {
+     fill: currentColor;
+     cursor: pointer;
 }
 
 #intro {
      width: 100%;
+     margin-top: 10%;
 }
 
-/* section {
-     width: 40%;
-     padding: 0 42%;
-} */
+#name {
+     font-size: 400%;
+     font-weight: 600;
+     text-align: right;
+     padding: 0;
+     margin: 0;
+}
 
+#job_title {
+     font-weight: 1;
+     font-size: 150%;
+     text-align: right;
+     padding: 0;
+     margin: 0;
+}
 
-ul {
-     padding:0;
+ul, li, a {
+     color:rgb(4, 180, 255);
+     list-style-type: none;
+     text-decoration: none;
+     text-align: left;
+     display: flex;
+     align-items: flex-start;
      width: 100%;
-     text-align: center;
-     float:left;
+     padding: 0;
+     margin: 0;
+}
+
+a.light-mode {
+     color: rgb(0, 0, 0);
+}
+
+ul li:first-child {
+     width: 6%;
 }
 
 li {
-     opacity: .5;
-     padding: 0 40%;
-     list-style: none;
-     text-align: center;
+     width: 10%;
 }
 
-li:hover {
-     opacity: 2;
+li a:hover {
+     color:rgb(143, 50, 255);
+     transition: ease-in .8s;
 }
 
-#work {
-     width: 30%;
-     height: 6em;
-     display:inline-block;
+.nav-bar {
+     display: flex;
+     border-bottom: 2px solid rgb(4, 180, 255);
 }
 
-#work h3 {
-     padding: 0;
-     text-align: center;
-     margin: 0;
+.nav-bar.light-mode {
+     border-bottom: 2px solid rgb(0, 0, 0);
 }
 
-#title {
-     padding-bottom: 2em;
-     margin: 0;
+#LM {
+     color: rgb(143, 50, 255);
 }
 
-img {
-     padding-top: 20%;
+#LM:hover {
+     color: rgb(4, 180, 255);
+     transition: ease-in .8s;
 }
 
-form * {
-     display: inline-block;
-     width: 40%;
+.nav-bar ul .right-align {
+     margin-left: auto;
+     margin-right: 0;
+ }
+
+ /* ABOUT */
+.container {
+     display: flex;
+     justify-content: space-between;
 }
 
-form input {
-     font-family:Arial, Helvetica, sans-serif;
-     font-size: .5em;
-     margin-bottom: 1em;
-     opacity: .8;
-     width: 25%;
-}
+ #me {
+     display: flex;
+     align-items: right;
+     width: 75%;
+     padding: 10% 0 10% 10%;
+ }
 
-#subject {
-     font-family: "Major Mono Display", monospace;
-     width: 60%;
-     padding: 0 20%;
-     display: inline-block;
-     height: 200px;
-     font-size: .5em;
-     margin-bottom: 1em;
-     opacity: .8;
-}
+ .bio_1 {
+     width: 50%;
+     padding-top: 8%;
+ }
 
-#submit {
-     font-family: "Major Mono Display", monospace;
-     width: 15%;
-     display:block;
-     text-align: center;
-     margin-left: 42%;
-}
+ .bio_2 {
+     width: 50%;
+ }
 
-#info {
-     text-align: left;
-     width: 40%;
-}
-
-#section-right {
-     width: 40%;
-     float: right;
-     margin-right: 10%;
-     height: auto;
-}
-
-#section-left {
-     width: 40%;
-     float: left;
-     margin-left: 10%;
-     height: auto;
-}
-
-#me {
-     border-radius: 4px;
-     max-width: 40%;
-     height: auto;
-     padding-top: 10%;
-}
-
-.work {
-     width: 80%;
-}
-
-.projects {
-     padding-bottom: 5%;
-}
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
-}
-
-footer {
-
-}
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
